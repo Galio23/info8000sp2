@@ -17,3 +17,5 @@ while True:
     numbers.append(line.strip())
 print(numbers)
 file_handle.close()
+
+
