@@ -35,11 +35,11 @@ async def read_readings(sensor_name: str):
     return await database.fetch_all("SELECT * FROM sensor_readings WHERE name= :name",
     {"name":sensor_name})
     
-'''
+
 @app.get("/readings/{sensor_name")
 def read_reading(sensor_name:str):
     return [{"name":sensor_name, "value":10, "time": time.time()}]
-    '''
+    
 
 @app.put("/readings")
 async def put_reading(reading:SensorReading):
